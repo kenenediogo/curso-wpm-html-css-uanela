@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width", initial-scale=1.0" />
+		<meta name="description" content="Minha primeira página web" />
+		<title>Primeira Página Wed Pro Max</title>
+
+		<style>
+
+			body{
+				margin: 0;
+				padding: o;
+			}
+			
+			nav{
+				display: flex; /* para colocar os conteúdos lado a lado */
+				justify-content: space-between; /* essa propriedade faz os conteúdos que estavam lado a lado ficarem separado,  										   um a esquerda e outro a direita */
+				padding-left: 50px;
+				padding-right: 50px;
+				font-weight: bold;
+			}
+
+			ul{
+				list-style: none;
+				display: flex; /* para colocar os conteúdos lado a lado */
+			}
+
+			li{
+				margin-left: 20px;
+				cursor: pointer; /* vai fazer o cursor virar uma mão quando passar por cima */
+			}
+
+			
+			header{
+				text-align: center;
+				background-color: #006eff;
+				color: #fff;
+				padding: 100px 75px;
+			}
+			
+			header h2{
+				font-size: 72px;
+			}
+			
+			header p{
+				widht: 70%;
+				margin: 0 auto 50px auto;
+			}
+
+			header a{
+				text-decoration: none;
+				border: solid 1px #fff;
+				border-radius: 20px;
+				padding: 10px 30px;
+				color: #fff;
+			}
+			
+			main{
+				display: grid; /* para colocar os artigos em forma de grade */
+				grid-template-columns: repeat(3, 1fr); /* vai determinar o número de colunas, neste caso serão 3 */
+				padding: 0 100px;
+			}
+
+			article{
+				padding: 20px;
+			}
+
+			article:nth-child(2){
+				background-color: #b700ff;
+				color: #fff;
+			}
+
+			article:nth-child(3){
+				background-color: #001a3b;
+				color: #fff;
+			}
+
+			footer{
+				background-color: #0084ff;
+				color: #fff;
+				text-align: center;
+				padding: 20px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<nav>
+			<h1>Kenene Diogo</h1>
+			
+			<ul>
+				<li>Home</li>
+				<li>Serviços</li>
+				<li>Portfólio</li>
+				<li>Sobre</li>
+			</ul>
+		</nav>
+		
+
+		<header>
+			<h2>FÓRMULA WEB PRO MAX</h2>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere purus blandit, auctor purus id, rhoncus ipsum. Vestibulum mattis in velit ut lobortis. Maecenas ut lectus dapibus nunc tempor sollicitudin. Integer felis enim, lacinia vel tempus sit amet, eleifend eu diam. Sed et libero vitae ipsum varius feugiat eu vel justo. Sed mollis, odio eu ornare elementum, sem tellus eleifend sem, eget pulvinar sem dui ut neque. Nunc sit amet odio pellentesque, tempor justo vitae, tincidunt risus. Vivamus vitae diam cursus, mattis mauris vestibulum, feugiat ipsum. Mauris bibendum risus id sodales commodo. Aenean ultrices odio et enim tincidunt, a cursus nunc malesuada. Sed lobortis, augue at porttitor tristique, sapien diam gravida lectus, vitae venenatis orci velit non eros. Aenean cursus ante eu dignissim placerat. Nam at enim eget elit pulvinar sollicitudin. Aliquam erat volutpat. Integer laoreet massa sed quam varius facilisis.</p>
+			
+			<a href="#">VER MAIS</a>
+		</header>
+		
+		<main>
+			<article>
+				<p>Subtítulo 1</p>
+				
+				<h3>Gerando idéias</h3>
+
+				<p>Estou começando aprender sobre a criação de páginas Web, para se tornar um desenvolvedor Web Pro Max, com o professor Uanela Como, a partir do Portal: Fórmula Web Pro-Max.</p>
+			</article>
+
+
+			<article>
+				<p>Subtítulo 2</p>
+				
+				<h3>Realizando idéias</h3>
+
+				<p>Com o começo das aulas, estou aprendendo a criar um site super básico, mas que dará os conhecimento necessários para se criar uma página Web e impressionar algumas pessoas com o trabalho feito.</p>
+			</article>
+
+
+			<article>
+				<p>Subtítulo 3</p>
+				
+				<h3>Melhorando idéias</h3>
+
+				<p>Para a melhoria das aulas, não basta apenas assistir as mesmas com a mão na bochecha, vendo o professor fazendo, achando que também já sabe. Tem que procurar fazer com o professor e procurar fazer sozinho, buscar suporte e até procurar fazer algo diferente do que o professor já tenha ensinado</p>
+			</article>
+		</main>
+		
+		<footer>
+			&copy; Kenene Diogo. Todos os Direitos Reservados.
+		</footer>
+		
+		
+		
+		
+	</body>
+
+</html>
