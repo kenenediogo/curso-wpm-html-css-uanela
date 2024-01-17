@@ -1,9 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
@@ -58,14 +56,6 @@ h3 {
     padding: 0px 20px;
 }
 
-/* referente a página ABOUT */
-.container1 {
-    margin: auto;
-    max-width: 1100px;
-    overflow: auto;
-    padding: 20px 20px;
-}
-
 /* 16 -> classe "texto-primário", para configurar vários elementos */
 .texto-primario {
     color: var(--cor4);
@@ -80,12 +70,6 @@ h3 {
 /* 17 -> classe "texto-principal, para configurar vários parágrafos */
 .texto-principal {
     font-size: 20px;
-    font-family: var(--font-destaque);
-}
-
-/* referente a página ABOUT */
-.texto-principal1 {
-    font-size: 26px;
     font-family: var(--font-destaque);
 }
 
@@ -127,7 +111,6 @@ h3 {
 .realcar {
     color: #fff
 }
-
 
 /* --------------------- fim da classe utilitaria */
 
@@ -184,23 +167,9 @@ h3 {
     height: 600px;
 }
 
-/* referente a página ABOUT */
-#showcase1 {
-    background: url('../scout-imagen/pag1-secatedral-png1.png') no-repeat center center/cover;
-    height: 100%;
-    width: 100%;
-}
-
 /* 13 -> configurar o conteúdo do showcase-content */
 #showcase .showcase-content {
     color: var(--cor0);
-    text-align: center;
-    padding-top: 140px;
-}
-
-/* referente a página ABOUT */
-#showcase1 .showcase-content1 {
-    color: #000;
     text-align: center;
     padding-top: 140px;
 }
@@ -211,21 +180,8 @@ h3 {
     line-height: em;
 }
 
-/* referente a página ABOUT */
-#showcase1 .showcase-content1 h1 {
-    font-size: 60px;
-    line-height: 2em;
-}
-
 /* 15 -> configurar o parágrafo "p" do showcase-content */
 #showcase .showcase-content p {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    line-height: 1.7em;
-}
-
-/* referente a página ABOUT */
-#showcase1 .showcase-content1 p {
     padding-top: 20px;
     padding-bottom: 30px;
     line-height: 1.7em;
@@ -249,14 +205,6 @@ h3 {
     width: 50%;
     height: 100%;
     text-align: center;
-    padding: 50px 30px;
-}
-
-/* referente a página ABOUT */
-#home-info .info-content1 {
-    float: center;
-    width: 100%;
-    height: 100%;
     padding: 50px 30px;
 }
 
@@ -319,3 +267,57 @@ h3 {
     color: #fff;
     padding: 20px;
 }
+
+/*----------- PÁGINA ABOUT -------------*/
+
+/* referente a página ABOUT */
+.container1 {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 20px 20px;
+}
+
+/* referente a página ABOUT */
+.texto-principal1 {
+    font-size: 26px;
+    font-family: var(--font-destaque);
+}
+
+/* referente a página ABOUT */
+#showcase1 {
+    background: url('../scout-imagen/pag1-secatedral-png1.png') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* referente a página ABOUT */
+#showcase1 .showcase-content1 {
+    color: #000;
+    text-align: center;
+    padding-top: 140px;
+}
+
+/* referente a página ABOUT */
+#showcase1 .showcase-content1 h1 {
+    font-size: 60px;
+    line-height: 2em;
+}
+
+/* referente a página ABOUT */
+#showcase1 .showcase-content1 p {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    line-height: 1.7em;
+}
+
+/* referente a página ABOUT */
+#home-info .info-content1 {
+    float: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px;
+}
+
+
+
