@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* Raíz da árvore do documento: tudo que se definir no root, 
+vai servir para o documento inteiro. Criação de variáveis das cores e as fontes a usar no projecto */
+:root {
+    --cor0: #F2F2F2;
+    --cor1: #BDA8BF;
+    --cor2: #8C648A;
+    --cor3: #710273;
+    --cor4: #580259;
+
+    --font-padrao: Arial, Verdana, Helvetica, Sans-Serif;
+    --font-padrao1: 'Poppins', sans-serif;
+    --font-destaque: 'Josefin Sans', sans-serif;
+    --font-titulos: 'Bricolage Grotesque', sans-serif;
+}
+
+/* 1 -> Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* 3 -> Estilos Principais */
+html, body {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+
+/* 2 -> configuração do link*/
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+/* 4 -> configuração dos títulos*/
+h1,
+h2,
+h3 {
+    padding-bottom: 20px;
+}
+
+/* classes utilitárias, vamos usar em diversos elementos então configuramos uma única vez ----------------*/
+
+/* 11 -> criamos a classe .container para delimitar a nova navbar*/
+.container{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0px 20px;
+}
+
+/* 16 -> classe "texto-primário", para configurar vários elementos */
+.texto-primario {
+    color: var(--cor4);
+}
+
+.texto-secundario {
+    color: #222;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* 17 -> classe "texto-principal, para configurar vários parágrafos */
+.texto-principal {
+    font-size: 20px;
+    font-family: var(--font-destaque);
+}
+
+/* 18 -> classe "btn", para configurar todos os botões que estivermos no site */
+.btn {
+    display: inline-block;
+    color: var(--cor0);
+    font-size: 18px;
+    background-color: var(--cor4);
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.seccoes {
+    background-color: #222;
+    text-align: center;
+}
+
+/* 19 -> criar um efeito nos botões */
+.btn:hover{
+    background-color: var(--cor2);
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+/* 22 -> definir a cor da section */
+.bg-dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.bg-light {
+    background-color: #80808059;
+    color: #222;
+}
+
+.realcar {
+    color: #fff
+}
+
+/* --------------------- fim da classe utilitaria */
+
+/* 4 -> Navbar */
+#navbar {
+    background-color: #222;
+    background-color: var(--cor4);
+    color: #fff;
+    overflow: auto;
+    font-family: var(--font-destaque);
+}
+
+/* 5 */
+#navbar a {
+    color: #fff;
+}
+
+/* 6 */
+#navbar h1 {
+    float: left;
+    padding: 20px;
+}
+
+/* 7 -> configurar as listas (links) e colocar a direita*/
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+/* 8 -> configurar as listas (links) e colocar cada elemento ao lado um do outro */
+#navbar ul li{
+    float: left;
+}
+
+/* 9 -> configurar a lista (links) para dar um afastamento e o seu posicionamento */
+#navbar ul li a {
+    display: block;
+    padding: 46px 20PX;
+    text-align: center;
+    font-weight: bold;
+    font-weight: bold;
+}
+
+/* 10 -> configurar o hover do link e configurar o link para permanecer selecionado quando cliclamos, adicionamos a classe "actual" no link desejado  */
+#navbar ul li a:hover,
+#navbar ul li a.actual{
+    background-color: var(--cor2);
+    color: var(--cor4);
+}
+
+/* 12 -> configurar a class "Showcase onde consta a parte das boas vindas */
+#showcase {
+    background: url('../scout-imagen/pag1-secatedral-png1.png') no-repeat center center/cover;
+    height: 600px;
+}
+
+/* 13 -> configurar o conteúdo do showcase-content */
+#showcase .showcase-content {
+    color: var(--cor0);
+    text-align: center;
+    padding-top: 140px;
+}
+
+/* 14 -> configurar o título "h1" do showcase-content */
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: em;
+}
+
+/* 15 -> configurar o parágrafo "p" do showcase-content */
+#showcase .showcase-content p {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    line-height: 1.7em;
+}
+
+/* 20 e 21 -> Home Info e .info-img */
+#home-info {
+    height: 360px;
+}
+
+#home-info .info-img {
+    background: url('../scout-imagen/escuteiros-h-1.jpeg') no-repeat center/cover;
+    width: 50%;
+    min-height: 100%;
+    float: left;
+}
+
+/* 23 -> configurar o info-content que está dentro do home-info */
+#home-info .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+/* 24 -> configurar o parágrafo que está dentro do home-info */
+#home-info .info-content p {
+    padding-bottom: 30px;
+}
+
+/* Features */
+
+/* 25 -> configuração da área das secções usando a classe box para colocar cada elemento ao lado um do outro */
+.box {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    text-align: right;
+}
+
+.box i{
+    margin-bottom: 10px;
+}
+
+.box p{
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* configuração do fundo das Secções */
+#feacture a {
+    text-decoration: none;
+    color: blue;
+    font-style: italic;
+} 
+
+.bg-lobitos {
+    background: url('../scout-imagen/1lobitos.jpg') no-repeat top left;
+}
+
+.bg-juniores {
+    background: url('../scout-imagen/2juniores.jpg') no-repeat top left;
+    
+}
+
+.bg-seniores {
+    background: url('../scout-imagen/3seniores.jpg') no-repeat top left;
+}
+
+.bg-caminheiros {
+    background: url('../scout-imagen/4caminheiros.jpg') no-repeat top left;
+}
+
+/* FOOTER */
+
+/* 26 - Para evitar que os dados do footer vão para outra parte que não seja o proprio footer, devemos limpar os dois lados com a propriedade clear: both */
+#main-footer {
+    clear: both;
+    text-align: center;
+    background-color: #141414;
+    color: #fff;
+    padding: 20px;
+}
+
+/*----------- PÁGINA ABOUT -------------*/
+
+/* referente a página ABOUT */
+.container1 {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 20px 20px;
+}
+
+/* referente a página ABOUT */
+.texto-principal1 {
+    font-size: 26px;
+    font-family: var(--font-destaque);
+}
+
+/* referente a página ABOUT */
+#showcase1 {
+    background: url('../scout-imagen/pag1-secatedral-png1.png') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* referente a página ABOUT */
+#showcase1 .showcase-content1 {
+    color: #000;
+    text-align: center;
+    padding-top: 140px;
+}
+
+/* referente a página ABOUT */
+#showcase1 .showcase-content1 h1 {
+    font-size: 60px;
+    line-height: 2em;
+}
+
+/* referente a página ABOUT */
+#showcase1 .showcase-content1 p {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    line-height: 1.7em;
+}
+
+/* referente a página ABOUT */
+#home-info .info-content1 {
+    float: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px;
+}
