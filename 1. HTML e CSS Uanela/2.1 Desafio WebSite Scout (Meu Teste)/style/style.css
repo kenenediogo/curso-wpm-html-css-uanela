@@ -73,6 +73,10 @@ h3 {
     font-family: var(--font-destaque);
 }
 
+.titulo-largo {
+    font-size: 40px;
+}
+
 /* 18 -> classe "btn", para configurar todos os botões que estivermos no site */
 .btn {
     display: inline-block;
@@ -104,7 +108,7 @@ h3 {
 }
 
 .bg-light {
-    background-color: #80808059;
+    background-color: #fff;
     color: #222;
 }
 
@@ -257,6 +261,43 @@ h3 {
     background: url('../scout-imagen/4caminheiros.jpg') no-repeat top left;
 }
 
+/*----------- PÁGINA AGRUPAMENTO -------------*/
+/* 30 - adicionar margem em cima */
+#about-info {
+    margin-top: 40px;;
+}
+
+/* 27 - Estilizar o lado direito da secção para as duas fiquem uma do lado da outra. A largura nesse caso será de 50%.*/
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+    padding-bottom: 25px;
+}
+
+/* 28 - Estilização da imagem para ficar a direita */
+#about-info .info-right img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 32px;
+    padding-bottom: 25px;
+}
+
+/* 29 - Estilização do lado esquerdo */
+#about-info .info-left {
+    float: left;
+    text-align: justify;
+    width: 50%;
+    min-height: 100%;
+    padding: 10px;
+}
+
+
+
+
+
+
 /* FOOTER */
 
 /* 26 - Para evitar que os dados do footer vão para outra parte que não seja o proprio footer, devemos limpar os dois lados com a propriedade clear: both */
@@ -268,9 +309,10 @@ h3 {
     padding: 20px;
 }
 
-/*----------- PÁGINA ABOUT -------------*/
 
-/* referente a página ABOUT */
+
+
+/* referente a página AGRUPAMENTO */
 .container1 {
     margin: auto;
     max-width: 1100px;
@@ -278,40 +320,40 @@ h3 {
     padding: 20px 20px;
 }
 
-/* referente a página ABOUT */
+/* referente a página AGRUPAMENTO */
 .texto-principal1 {
     font-size: 26px;
     font-family: var(--font-destaque);
 }
 
-/* referente a página ABOUT */
+/* referente a página AGRUPAMENTO */
 #showcase1 {
     background: url('../scout-imagen/pag1-secatedral-png1.png') no-repeat center center/cover;
     height: 100%;
     width: 100%;
 }
 
-/* referente a página ABOUT */
+/* referente a página AGRUPAMENTO */
 #showcase1 .showcase-content1 {
     color: #000;
     text-align: center;
     padding-top: 140px;
 }
 
-/* referente a página ABOUT */
+/* referente a página AGRUPAMENTO */
 #showcase1 .showcase-content1 h1 {
     font-size: 60px;
     line-height: 2em;
 }
 
-/* referente a página ABOUT */
+/* referente a página AGRUPAMENTO */
 #showcase1 .showcase-content1 p {
     padding-top: 20px;
     padding-bottom: 30px;
     line-height: 1.7em;
 }
 
-/* referente a página ABOUT */
+/* referente a página AGRUPAMENTO */
 #home-info .info-content1 {
     float: center;
     width: 100%;
