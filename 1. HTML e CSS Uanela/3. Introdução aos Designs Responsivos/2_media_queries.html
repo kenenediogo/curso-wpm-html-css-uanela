@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt_pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            color: #fff;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1{
+            display: none;
+        }
+
+        /* DIV SMARTPHONE: Fazer com que o texto apareça no ecrã quando a largura da tela for nenor que 500 px*/
+        @media (max-width: 500px){
+            body{
+                background-color: red;
+            }
+
+            #smartphone h1{
+                display: block;
+            }
+        }
+
+        /* DIV TABLETS: Fazer com que o texto apareça no ecrã quando a largura da tela for nenor que 768 px*/
+        @media (min-width: 501px) and (max-width: 768px){
+            body{
+                background-color: blue;
+            }
+
+            #tablet h1{
+                display: block;
+            }
+        }
+
+        /* DIV NORMAL: Fazer com que o texto apareça no ecrã quando a largura da tela estiver entre 769px e 1200px */
+        @media (min-width: 769px) and (max-width: 1200px){
+            body{
+                background-color: green;
+            }
+
+            #normal h1{
+                display: block;
+            }
+        }
+
+        /* DIV WIDESCREEN: Fazer com que o texto apareça no ecrã quando a largura da tela estiver acima 1200px */
+        @media (min-width: 1201px){
+            body{
+                background-color: black;
+            }
+
+            #widescreen h1{
+                display: block;
+            }
+        }
+
+        /* DIV PAISAGE: Fazer com que o texto apareça no ecrã quando a altura for da definição */
+        @media (max-height: 500px) {
+            body{
+                background-color: orange;
+            }
+
+            #paisagem h1{
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="widescreen"><h1>widescreen</h1></div>
+    <div id="normal"><h1>normal</h1></div>
+    <div id="tablet"><h1>tablet</h1></div>
+    <div id="smartphone"><h1>smartphone</h1></div>
+    <div id="paisagem"><h1>paisagem</h1></div>
+</body>
+</html>
