@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bem vindo ao Melhor Hotel da Cidade de Luminária">
     <link rel="stylesheet" href="styles/styles.css">
+
     <script 
         src="https://kit.fontawesome.com/219142bc1f.js" 
         crossorigin="anonymous">
     </script>
+
+    <!-- Este link é para estilizar o nosso site para quando forem telas até 786px -->
+    <!-- ele pega o estilo do CSS específico para esse tipo de telas, isto é o mobile.css -->
+    <link 
+        rel="stylesheet" 
+        media="screen and (max-width: 768px)" 
+        href="styles/mobile.css"
+    />
+
     <title>Hotel Lua | Bem Vindo</title>
 </head>
 <body>
     <header>
         <nav id="navbar">
             <div class="container">
-                <h1 id="logo"><a href="index.html">HTL</a></h1>
+                <h1 class="logo"><a href="index.html">HTL</a></h1>
                 <ul>
                     <li><a class="actual" href="index.html">Home</a></li>
                     <li><a href="about.html">Sobre</a></li>
@@ -27,7 +37,7 @@
         <div id="showcase">
             <div class="container">
                 <!-- showcase content: conteúdos do showcase -->
-                <div class="showcase-content" >
+                <div class="showcase-content">
                     <h1><span class="texto-primario">Desfrute da</span> Sua Estadia</h1>
 
                     <p class="texto-principal">É com imenso prazer que damos as boas-vindas ao Hotel Lua! Estamos emocionados por tê-lo(a) conosco e ansiosos para proporcionar uma estadia memorável. Se precisar de alguma assistência ou tiver alguma dúvida, não hesite em contactar a nossa recepção, disponível 24 horas por dia. Estamos aqui para tornar sua estadia inesquecível.</p>

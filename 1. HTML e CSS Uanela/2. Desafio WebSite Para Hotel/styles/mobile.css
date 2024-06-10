@@ -1,0 +1,54 @@
+#navbar .logo {
+    float: none;
+    text-align: center;
+}
+
+#navbar ul, 
+#navbar ul li {
+    float: none;
+}
+
+#navbar ul li a {
+    padding: 5px;
+    border-bottom: #444 dotted 1px;
+}
+
+/* SHOWCASE */
+
+#showcase {
+    height: 100%; /* colocar a altura do showcase a 100%*/
+}
+
+ /* alterar o espaçamento */
+#showcase .showcase-content {
+    /*padding-top: 70px;
+    padding-bottom: 30px;*/
+    padding: 30px;
+}
+
+/* HOME INFO */
+
+/* Na versão mobile vamos alterar a altura */
+#home-info {
+    height: 550px;
+}
+
+/* Na versão mobile vamos retirar a imagem da Informação para o texto ser melhor apresentado */
+#home-info .info-img {
+    display: none;
+}
+
+/* O texto se encontra a direita, vamos colocar ele no centro definindo o with para ocupar o texto completo */
+#home-info .info-content {
+    float: none;
+    width: 100%;
+}
+
+/* BOXES */
+
+/* Colocar uma por cima da outra */
+.box {
+    float: none;
+    width: 100%;
+}
+
