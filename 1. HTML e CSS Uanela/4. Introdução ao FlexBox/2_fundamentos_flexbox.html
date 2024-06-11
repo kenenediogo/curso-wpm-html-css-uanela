@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Flexbox</title>
+
+    <style>
+        .container {
+            display: flex;
+            border: 1px red solid; 
+            /* flex-direction: row; /* É para definir a direção em que os elementos estarão no container: row; row-reverse; column; column-reverse */
+            /* flex-wrap: wrap; /* É para fazer com que todos elementos apareçam no escrã, independentemente da sua view port: wrap; no-wrap; wrap-reverse */
+            flex-flow: row-reverse wrap; /* É uma combinação do Flex-Direction com o Flex-Wrap */
+        }
+
+        .box{
+            padding: 20px;
+            background-color: #ddd;
+            border: 1px #ccc solid;
+            flex: auto; /* Faz com que todos elementos ocupem a view port. Pode ainda usar o número 1 como propriedade ao invês do auto */
+            margin: 5px; /* Cria uma margim entre os elementos dentro do container */
+        }
+
+        #box-2{
+            flex: 10; /* Neste caso, ele define o tamanho da div-2 para que seja maior do que as outras divs */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+    </div>
+</body>
+</html>
