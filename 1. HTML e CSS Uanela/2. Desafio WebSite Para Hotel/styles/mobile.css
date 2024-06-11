@@ -1,3 +1,10 @@
+/* CLASSES UTILITÁRIAS*/
+
+.titulo-largo{
+    text-align: center;
+    font-size: 32px;
+}
+
 #navbar .logo {
     float: none;
     text-align: center;
@@ -26,11 +33,15 @@
     padding: 30px;
 }
 
+#showcase .showcase-content h1 {
+    font-size: 32px;
+}
+
 /* HOME INFO */
 
 /* Na versão mobile vamos alterar a altura */
 #home-info {
-    height: 550px;
+    height: 500px;
 }
 
 /* Na versão mobile vamos retirar a imagem da Informação para o texto ser melhor apresentado */
@@ -52,3 +63,27 @@
     width: 100%;
 }
 
+/* PÁGINA ABOUT */
+
+/* Colocar os elementos um por baixo do outro e com uma largura total da página*/
+#about-info .info-right,
+#about-info .info-left {
+    float: none;
+    width: 100%;
+}
+
+/* Vamos colocar uma margem no topo */
+#about-info .info-right{
+    padding: 30px;
+}
+
+/* TESTIMONIALS */
+#testemunhos {
+    height: auto;;
+}
+
+/* CONTACTOS */
+
+#contacto-info .box {
+    border-bottom: #444 dotted 1px;
+}
