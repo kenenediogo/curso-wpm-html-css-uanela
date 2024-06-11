@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamentos e Ordem de Flex Items</title>
+
+    <style>
+        .container{
+            display: flex;
+            border: 1px red solid;
+            height: 200px;
+
+            /*flex-flow: row wrap;*/
+
+            justify-content: center; /* Valores: center, flex-start, flex-end, space-around, space-between */
+            align-items: center; /* Valores: center, flex-start, flex-end, stretch, baseline */
+            align-content: center; /* Alinha os itens do flex-container e não dos itens. Valores: space-between, space-around, stretch, center, flex-start, flex-end */
+        }
+
+        .box {
+            background-color: #ddd;
+            border: 1px #ccc solid;
+            padding: 20px;
+            /* flex-basis: 33%;
+            margin: 10px; */
+        }
+
+        #div-1 {
+            order: 4; /* Altera a óderm manual dos elementos dentro da div;
+            flex-grow: 1; -  Define o quão um elemento irá crescer em relação aos outros; 
+            flex-shrink: 0; - Define para o elemento não encolher, inverso do grow;
+            flex-basis: 30%; - Define como cada elemento vai estar alinhado no container;
+            flex: 0 0 200px; - É uma ShortHand, uma combinação do flex-grou, flex-srink e o flex-basis */
+            align-self: center; /* valores: auto, flex-start, flex-end, center, baseline, stretch */
+        }
+
+        #div-2 {
+            order: 2;
+        }
+
+        #div-3 {
+            order: 3;
+        }
+
+        #div-4 {
+            order: 1;
+        }
+
+        #div-5 {
+            order: 5;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div id="div-1" class="box">1</div>
+        <div id="div-2" class="box">2</div>
+        <div id="div-3" class="box">3</div>
+
+
+    </div>
+</body>
+</html>
