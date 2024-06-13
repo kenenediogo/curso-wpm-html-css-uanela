@@ -1,0 +1,16 @@
+Fire
+<i class="fa-solid fa-fire-flame-curved" style="color: #f71302;"></i>
+<i class="fa-duotone fa-fire-flame-curved" style="--fa-primary-color: #f71302; --fa-secondary-color: #f71302;"></i>
+
+Biblia
+<i class="fa-solid fa-book-bible"></i>
+
+Mochila
+<i class="fa-solid fa-suitcase"></i>
+
+Tenda
+<i class="fa-solid fa-campground" style="color: #243b02;"></i>
+
+Pão
+<i class="fa-solid fa-bread-slice" style="color: #6c5604;"></i>
+
