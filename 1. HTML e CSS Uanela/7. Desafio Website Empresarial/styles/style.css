@@ -107,6 +107,16 @@ a {
     padding: 3rem;
 }
 
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+
 
 /* NAVBAR */
 #navbar {
@@ -162,6 +172,10 @@ a {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+#showcase .showcase-content h1 {
+    padding-bottom: 2rem;
+}
+
 /* SECTION: Simbologia do Caminheiro */
 
 #services .items {
@@ -174,7 +188,8 @@ a {
     flex: auto;
     text-align: center;
     padding: 1rem;
-    border: #333 dotted 1px;
+    border: #33333326 dotted 1px;
+    border-radius: 10px;
 
 }
 
@@ -183,9 +198,22 @@ a {
 }
 
 #services .items .item i {
-    background-color: #3333336c;
+    background-color: #000000;
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+}
+
+/* SECTION: DIMENSIONS: IMAGEM */
+#dimensions {
+    display: flex;
+}
+
+#dimensions div {
+    flex: 1;
+}
+
+#dimensions .dimensions-img {
+    background: #333 url("../imagem/escuteiros-h.jpeg") no-repeat center center/cover;
 }
 
