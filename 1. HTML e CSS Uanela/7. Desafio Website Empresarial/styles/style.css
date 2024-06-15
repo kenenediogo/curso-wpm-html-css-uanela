@@ -23,6 +23,13 @@ a {
     overflow: hidden; /* Qdo o texto exceder o tamanho do container, ele fica escondido */
 }
 
+.container1 {
+    max-width: 100%;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden; 
+}
+
 .text-center {
     text-align: center;
 }
@@ -176,12 +183,11 @@ a {
     padding-bottom: 2rem;
 }
 
-/* SECTION: Simbologia do Caminheiro */
+/* SECTION: Mística, Simbologia e Dimensões do Caminheiro */
 
 #services .items {
     display: flex;
     padding: 1rem;
-    
 }
 
 #services .items .item {
@@ -244,3 +250,4 @@ a {
     text-decoration: none;
     color:#000000
 }
+
