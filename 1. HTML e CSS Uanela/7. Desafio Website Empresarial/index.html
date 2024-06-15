@@ -11,10 +11,6 @@
 
     <link rel="stylesheet" href="styles/style.css">
 
-    <script 
-        src="https://kit.fontawesome.com/219142bc1f.js" 
-        crossorigin="anonymous">
-    </script>
 </head>
 <body>
 
@@ -27,8 +23,9 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#services">Quem Somos</a></li>
-            <li><a href="#simbology">Simbologia</a></li>
-            <li><a href="#dimensions">Dimensões</a></li>
+            <li><a href="#simbology">Mística e Simbologia</a></li>
+            <li><a href="#team">Equipa</a></li>
+            <li><a href="#dimentions">Dimensões</a></li>
             <li><a href="#faceis">Etapas</a></li>
             <li><a href="#contact">Contacto</a></li>
         </ul>
@@ -49,8 +46,8 @@
         </div> 
     </header>
 
-    <!-- SECÇÃO: O QUE NÓS FAZEMOS -->
-    <section id="services" class="bg-light py-1">
+    <!-- SECÇÃO: MISTICA E SIMBOLOGIA -->
+    <section id="simbology" class="bg-light py-1">
         
         <!-- MÍSTICA -->
         <div class="container">
@@ -148,10 +145,10 @@
     </section>
 
     <!-- SECÇÃO: CORPO DIRECTIVO -->
-    <section id="dimensions">
-        <div class="dimensions-img"></div>
+    <section id="team">
+        <div class="team-img"></div>
 
-        <div class="dimensions-text bg-dark p-2">
+        <div class="team-text bg-dark p-2">
             <h2 class="m-heading">
                 <span class="text-primary">Equipa</span> de Animação
             </h2>
@@ -171,7 +168,7 @@
     </section>
 
     <!-- SECÇÃO: DIMENSÕES DO CAMINHEIRO -->
-    <section id="services" class="bg-light py-1">
+    <section id="dimentions" class="bg-light py-1">
 
         <div class="container1">
          
@@ -220,7 +217,7 @@
     </section>
 
     <!-- SECCÇÃ: FACEIS -->
-    <section id="faceis" class="py-1">
+    <section id="faceis" class="bg-dark py-1">
 
         <!-- ÁREAS DE DESENVOLVIMENTO -->
         <div class="container">
@@ -262,6 +259,85 @@
             </div>
         </div>
     </section>
+
+    <!-- SECÇÃO: CONTACTO E LOCALIZAÇÃO -->
+    <section id="contact">
+        <div class="contact-form bg-primary p-2">
+            <h2 class="m-heading">Contacte-nos</h2>
+            <p>Por favor use o formulário abaixo para poder nos contactar</p>
+
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input 
+                        type="text" 
+                        name="nome" 
+                        id="name" 
+                        placeholder="Digite o seu nome"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        placeholder="Digite o seu email" 
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Número de Telefone</label>
+                    <input 
+                        type="text"
+                        name="phone"
+                        id="phone"
+                        placeholder="Digite o seu Telefone"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea 
+                        type="text"
+                        name="message"
+                        id="message"
+                        placeholder="Digite a sua mensagem"
+                    ></textarea>
+                </div>   
+            </form>
+        </div>
+
+        <div class="map">
+            <div class="gmap_canvas">
+                <iframe 
+                    class="gmap_iframe" 
+                    frameborder="0" 
+                    scrolling="no" 
+                    marginheight="0" 
+                    marginwidth="0" 
+                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=sumbe&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ></iframe
+                ><a href="https://strandsgame.net/">Strands NYT</a>
+            </div>
+
+        </div>
+    </section>
     
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-dark text-center py-1">
+        <div class="container">
+            <p>Copyright &copy; 2024, Clã Martin Luther King Jr, Todos Direitos Reservados</p>
+        </div>
+    </footer>
+
+
+    <script 
+        src="https://kit.fontawesome.com/219142bc1f.js" 
+        crossorigin="anonymous">
+    </script>
+
 </body>
 </html>
