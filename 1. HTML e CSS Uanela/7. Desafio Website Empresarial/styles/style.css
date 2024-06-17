@@ -286,12 +286,13 @@ p {
 }
 
 #faceis .items h3:hover {
-    color:#a90404
+    color:#a90404;
+    color: #fff;
 }
 
 #faceis .items a {
     text-decoration: none;
-    color:#000000
+    color:#000000;
 }
 
 /* SECTION: CONTACTO E LOCALIZAÇÃO */
