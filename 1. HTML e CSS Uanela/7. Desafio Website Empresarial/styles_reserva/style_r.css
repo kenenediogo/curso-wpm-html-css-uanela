@@ -169,33 +169,6 @@ p {
     border-radius: 5px;
 }
 
-.dropdown {
-    position: relative;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Estiliza o espaçamento dos ítens no dropdown */
-.dropdown:hover .dropdown-content a {
-    display: block;
-    transition: 0.3s;
-    padding: 0.5 0.7rem;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 150px;
-    margin-top: 0.7rem;
-    padding-top: 1.2rem;
-    padding-bottom: 1rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
 /* SHOWCASE */
 #showcase {
     background: #333 url("../imagem/pag1-secatedral-png1.png") no-repeat center center/cover;

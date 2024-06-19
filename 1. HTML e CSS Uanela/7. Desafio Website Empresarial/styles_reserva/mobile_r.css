@@ -64,7 +64,7 @@
 
 /* MOBILIE VIEW PORT 500PX */
 
-@media (max-width: 510px) {
+@media (max-width: 500px) {
     #navbar {
         flex-direction: column;
         align-items: center;
@@ -82,31 +82,12 @@
 
     #navbar ul li {
         padding: 0.5rem;
-    }
+    };
 
-    .lead {
-        text-align: left;
-        
+    #showcase .showcase-content {
+        top:  110px;
     }
 
 }
-
-/*#showcase .showcase-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 1.2rem;
-
-     Sobreposição da imagem, para tom mais escuro 
-    position: absolute;
-    top: 65px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-}*/
 
 
