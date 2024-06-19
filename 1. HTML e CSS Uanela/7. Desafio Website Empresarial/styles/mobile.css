@@ -53,8 +53,8 @@
 }
 
 #faceis .items img {
-    width: 15%;
-    margin-top: 2.5rem;
+    width: 13%;
+    margin-top: 2.2rem;
 }
 
 #faceis .items h3 {
@@ -77,12 +77,21 @@
         padding-bottom: 2rem;
     }
 
+    #showcase {
+        background: #333 url("../imagem/cla-mlkj.jpg") no-repeat center center/cover;
+        opacity: 0.9;
+    }
+
     .l-heading {
         font-size: 3rem;
     }
 
     .lead {
         font-size: 1.2rem;
+    }
+
+    #team {
+        display: block;
     }
 }
 
@@ -119,11 +128,16 @@
 
     #showcase .showcase-content {
         height: 1100px;
-        top: 124px;
+        top: 127px;
     }
 
     #showcase .showcase-content h1 {
         padding-bottom: 2rem;
+    }
+
+    #showcase {
+        background: #333 url("../imagem/cla-mlkj-1.jpg") no-repeat center center/cover;
+        opacity: 0.9;
     }
 
     .l-heading {
@@ -134,25 +148,24 @@
         font-size: 1.1rem;
     }
 
+    #main-footer p {
+        font-size: 0.8rem;
+    }
+
+    #team {
+        display: block;
+    }
+
+    #contact {
+        flex-direction: column;
+    }
+
+    #contact .map {
+        height: 200px;
+        border-top: 4px solid #333;
+    }
 
 }
 
-/*#showcase .showcase-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 1.2rem;
-
-     Sobreposição da imagem, para tom mais escuro 
-    position: absolute;
-    top: 65px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-}*/
 
 
