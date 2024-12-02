@@ -15,6 +15,12 @@ a {
 
 /*----- CLASSES UTILITÁRIAS -----*/
 /* Classe Texto Principal */
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
 .text-primary { 
     color: #ff1e00;
 }
@@ -47,11 +53,53 @@ a {
     color: #fff;
 } 
 
+.bg-light{
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark{
+    background-color: #333;
+    color: #fff;
+}
+
+.bg-primary{
+    background-color: #ff1e00;
+    color: #fff;
+}
+
 /* classe lead (Lema): parágrafo principal */
 .lead{
     font-size: 1.3rem;
     margin-bottom: 2rem;
 }
+
+/* Classe para definir o espaçamento (padding) nas direções vertical (topo e base) */
+.py-1{
+    padding: 1.5rem 0; /* Define 1.5rem de padding no topo e na base, 0 nos lados */
+}
+
+.py-2{
+    padding: 2rem 0; /* Define 2rem de padding no topo e na base, 0 nos lados */
+}
+
+.py-3{
+    padding: 3rem 0; /* Define 3rem de padding no topo e na base, 0 nos lados */
+}
+
+/* Classe para definir o espaçamento (padding) nas 4 direções (topo, direita, base e esquerda) */
+.p-1{
+    padding: 1.5rem 0; /* Define 1.5rem de padding em todas as direções (topo, direita, base e esquerda) */
+}
+
+.p-2{
+    padding: 2rem 0; /* Define 2rem de padding em todas as direções (topo, direita, base e esquerda) */
+}
+
+.p-3{
+    padding: 3rem 0; /* Define 3rem de padding em todas as direções (topo, direita, base e esquerda) */
+}
+
 /*---- FIM CLASSE UTILITÁRIA ----*/
 
 /*---- NAVBAR ----*/
