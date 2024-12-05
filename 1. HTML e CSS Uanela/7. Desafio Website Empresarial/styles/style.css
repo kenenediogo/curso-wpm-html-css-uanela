@@ -25,7 +25,6 @@ a {
 /* classe: texto ao centralizado*/
 .text-center{
     text-align: center;
-
 }
 
 .text-primary { 
@@ -176,20 +175,35 @@ a {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/*  SECÇÃO: O QUE NÓS FAZEMOS */
-#services .items{
-    display: flex;
-    padding: 1rem;
+
+/* SECÇÃO: O QUE NÓS FAZEMOS */
+
+/* Contêiner principal dos itens dentro da seção "services" */
+#services .items {
+    display: flex; /* Define um layout flexível para organizar os itens internos */
+    padding: 1rem; /* Adiciona espaçamento interno ao redor de todo o contêiner */
 }
 
-#services .items .item{
-    text-align: center;
-    padding: 1rem;
+/* Estilização para cada item individual dentro do contêiner */
+#services .items .item {
+    text-align: center; /* Centraliza horizontalmente o conteúdo dentro de cada item */
+    padding: 1rem; /* Adiciona espaçamento interno em torno de cada item */
 }
 
-#services .items .item i{
-    background-color: #ff1e00;
-    padding: 1rem;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+/* Estilização para o ícone dentro de cada item */
+#services .items .item i {
+    background-color: #ff1e00; /* Define a cor de fundo do ícone */
+    padding: 1rem; /* Adiciona espaçamento interno ao redor do conteúdo do ícone */
+    border-radius: 50%; /* Transforma o fundo do ícone em um círculo */
+    margin-bottom: 1rem; /* Adiciona espaço abaixo do ícone, separando-o do texto ou conteúdo seguinte */
+}
+
+/* SECÇÃO: QUEM SOMOS NÓS */
+#about{
+
+}
+
+#about .about-img{
+    background: #333 url(../images/team.jpg) no-repeat center center/cover;
+
 }
