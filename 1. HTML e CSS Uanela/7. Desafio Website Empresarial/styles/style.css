@@ -103,17 +103,26 @@ a {
 
 /* Classe para definir o espaçamento (padding) nas 4 direções (topo, direita, base e esquerda) */
 .p-1{
-    padding: 1.5rem 0; /* Define 1.5rem de padding em todas as direções (topo, direita, base e esquerda) */
+    padding: 1.5rem; /* Define 1.5rem de padding em todas as direções (topo, direita, base e esquerda) */
 }
 
 .p-2{
-    padding: 2rem 0; /* Define 2rem de padding em todas as direções (topo, direita, base e esquerda) */
+    padding: 2rem; /* Define 2rem de padding em todas as direções (topo, direita, base e esquerda) */
 }
 
 .p-3{
-    padding: 3rem 0; /* Define 3rem de padding em todas as direções (topo, direita, base e esquerda) */
+    padding: 3rem; /* Define 3rem de padding em todas as direções (topo, direita, base e esquerda) */
 }
 
+.list{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li{
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
 /*---- FIM CLASSE UTILITÁRIA ----*/
 
 /*---- NAVBAR ----*/
@@ -199,11 +208,39 @@ a {
 }
 
 /* SECÇÃO: QUEM SOMOS NÓS */
-#about{
 
+/* Estilização para o contêiner principal da seção com o ID "about" */
+#about {
+    display: flex; /* Define um layout flexível para organizar os elementos filhos horizontalmente (lado a lado por padrão) */
 }
 
-#about .about-img{
-    background: #333 url(../images/team.jpg) no-repeat center center/cover;
+/* Estilização genérica para todos os elementos <div> dentro da seção #about */
+#about div {
+    flex: 1; /* Garante que cada <div> ocupe um espaço igual dentro do contêiner flexível */
+}
 
+/* Estilização específica para a classe "about-img" dentro da seção #about */
+#about .about-img {
+    background: #333 url(../images/team.jpg) no-repeat center center/cover;
+    /* 
+        - #333: Define uma cor de fundo cinza escura para garantir contraste caso a imagem não carregue.
+        - url(../images/team.jpg): Define o caminho para a imagem de fundo.
+        - no-repeat: Evita que a imagem seja repetida.
+        - center center: Centraliza a imagem tanto horizontal quanto verticalmente.
+        - cover: Faz com que a imagem ocupe todo o espaço disponível sem distorcer, cortando se necessário.
+    */
+}
+
+/* SECÇÃO: CLIENTES */
+
+/* Estilização para o contêiner que agrupa os itens da seção "clients" */
+#clients .items {
+    display: flex; /* Define um layout flexível para organizar os itens filhos horizontalmente (lado a lado por padrão) */
+}
+
+/* Estilização para as imagens dentro do contêiner ".items" da seção "clients" */
+#clients .items img {
+    display: block; /* Garante que a imagem seja renderizada como um bloco, evitando o comportamento inline padrão */
+    margin: auto; /* Centraliza a imagem dentro de seu elemento pai, tanto horizontal quanto verticalmente */
+    width: 60%; /* Define que a largura da imagem será 60% do tamanho do contêiner pai, mantendo a proporção */
 }
