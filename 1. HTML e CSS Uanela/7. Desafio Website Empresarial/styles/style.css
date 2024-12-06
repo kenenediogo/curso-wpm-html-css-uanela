@@ -1,11 +1,21 @@
 /* Estilização global */
 
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 /* Define estilos universais aplicados a todos os elementos da página */
 * {
     padding: 0; /* Remove o espaçamento interno padrão de todos os elementos */
     margin: 0; /* Remove o espaçamento externo padrão de todos os elementos */
     box-sizing: border-box; /* Inclui bordas e padding no cálculo do tamanho total dos elementos, evitando problemas de layout */
 }
+
+/* ---- CONFIGURAÇÃO GERAL DO DOCUMENTO ---- */
+
+/* Estilização global para o elemento <html> */
+html {
+    scroll-behavior: smooth; /* Adiciona um efeito de rolagem suave ao navegar para âncoras ou ao usar links internos */
+}
+
 
 /* Estilização do corpo da página */
 body {
@@ -18,6 +28,12 @@ a {
     text-decoration: none; /* Remove o sublinhado padrão de todos os links para um visual mais limpo */
 }
 
+/* ---- CONFIGURAÇÃO DE PARÁGRAFOS ---- */
+
+/* Estilização global para os elementos <p> (parágrafos) */
+p {
+    margin: 0.75rem 0; /* Define margens verticais (superior e inferior) de 0.75rem e margens horizontais (esquerda e direita) de 0 */
+}
 
 /*----- CLASSES UTILITÁRIAS -----*/
 
@@ -95,7 +111,7 @@ a {
 
 /* Texto destacado */
 .lead {
-    font-size: 1.3rem; /* Tamanho de fonte ligeiramente maior que o normal */
+    font-size: 1.2rem; /* Tamanho de fonte ligeiramente maior que o normal */
     margin-bottom: 2rem; /* Espaçamento inferior para separação */
 }
 
@@ -258,4 +274,53 @@ a {
     display: block; /* Garante que a imagem seja renderizada como um bloco, evitando o comportamento inline padrão */
     margin: auto; /* Centraliza a imagem dentro de seu elemento pai, tanto horizontal quanto verticalmente */
     width: 60%; /* Define que a largura da imagem será 60% do tamanho do contêiner pai, mantendo a proporção */
+}
+
+/* ---- SECÇÃO: CONTACTO E LOCALIZAÇÃO ---- */
+
+/* Configuração geral para a secção de contacto */
+#contact {
+    display: flex; /* Utiliza o layout flexbox para organizar os elementos horizontalmente */
+}
+
+/* Define o estilo para o mapa e o formulário de contacto dentro da secção */
+#contact .map, 
+#contact .contact-form {
+    flex: 1; /* Cada elemento ocupa a mesma proporção do espaço disponível */
+    /* flex-basis: 50%; /* Garante que ambos ocupem inicialmente 50% da largura */
+}
+
+/* Configuração para grupos de formulário (ex.: campos de texto e rótulos) */
+#contact .contact-form .form-group {
+    margin: 0.75rem; /* Adiciona espaçamento ao redor de cada grupo de campos */
+}
+
+/* Estilização para os campos de entrada e área de texto dentro do formulário */
+#contact .contact-form input, 
+#contact .contact-form textarea {
+    width: 100%; /* Faz os campos ocuparem toda a largura disponível */
+    padding: 0.5rem; /* Adiciona espaçamento interno de 0.5rem em todos os lados */
+}
+
+/* ---- MAP ---- */
+
+/* Configuração geral para a área do mapa */
+.map {
+    position: relative; /* Define o mapa como relativo para facilitar posicionamentos internos */
+    text-align: right; /* Alinha o conteúdo do mapa à direita */
+    width: 100%; /* Faz o mapa ocupar toda a largura do container pai */
+}
+
+/* Configuração para o contêiner do mapa Google */
+.gmap_canvas {
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do container */
+    background: none!important; /* Remove qualquer fundo padrão do contêiner */
+    width: 100%; /* Faz o contêiner ocupar toda a largura disponível */
+    height: 100%; /* Faz o contêiner ocupar toda a altura disponível */
+}
+
+/* Estilização para o iframe do mapa (onde o mapa é embutido) */
+.gmap_iframe {
+    width: 100%; /* Faz o iframe ocupar toda a largura do container pai */
+    height: 100%; /* Faz o iframe ocupar toda a altura do container pai */
 }

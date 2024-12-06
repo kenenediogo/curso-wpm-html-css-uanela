@@ -8,11 +8,19 @@
             name="description" 
             content="Artshot é uma empresa de designer gráfico"
         />
-        <script 
-            src="https://kit.fontawesome.com/219142bc1f.js" 
-            crossorigin="anonymous">
-        </script>
+        
         <link rel="stylesheet" href="/styles/style.css">
+        <link 
+            rel="stylesheet" 
+            media="screen and (max-width: 768px)"
+            href="/styles/mobile.css"
+        />
+        
+        <link 
+            rel="stylesheet" 
+            media="screen and (min-width: 1100px)"
+            href="/styles/widscreen.css"
+        />
     </head>
     
     <body>
@@ -119,7 +127,87 @@
                     <div><img src="/images/nike-logo.png" alt=""></div>
                 </div>
             </div>
-        </section> 
+        </section>
 
+        <!-- SECÇÃO: CONTACTO E LOCALIZAÇÃO -->
+        <section id="contact">
+            <div class="contact-form bg-primary p-2">
+                <h2 class="m-heading">Contacte-nos</h2>
+                <p>Por favor use o formulário abaixo para podes nos contactar</p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input 
+                            type="text" 
+                            name="name" 
+                            id="name" 
+                            placeholder="Digite o seu nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            placeholder="Digite o seu Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Número de Telefone</label>
+                        <input 
+                            type="text" 
+                            name="phone" 
+                            id="phone" 
+                            placeholder="Digite o seu telefone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea 
+                            type="text" 
+                            name="message" 
+                            id="message" 
+                            placeholder="Digite a sua mensagem">
+                        </textarea>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="map">
+                <div class="gmap_canvas">
+                    <iframe class="gmap_iframe" 
+                    frameborder="0" 
+                    scrolling="no" 
+                    marginheight="0" 
+                    marginwidth="0" 
+                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=sumbe&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    
+                    <a href="https://sprunkin.com">Sprunki Mods</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="main-footer" class="bg-dark text-center">
+            <div class="container">
+                <p>Copyright &copy; 2023, ArtShot Designer, Todos Direitos Reservados</p>
+            </div>
+        </footer>
+
+        <script 
+            src="https://kit.fontawesome.com/219142bc1f.js" 
+            crossorigin="anonymous">
+        </script>
     </body>
 </html>
+
+
+
+
+
+
+
+
