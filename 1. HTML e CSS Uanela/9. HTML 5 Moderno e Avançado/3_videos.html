@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vídeos em HTML 5</title>
+    <title>Vídeos em HTML</title>
 </head>
 <body>
     
+    <!-- controls: Adiciona controles padrão (play, pause, volume, etc.) para o vídeo. -->
+    <!-- width="800px": Define a largura do vídeo como 800px. -->
+    <!-- height="450px": Define a altura do vídeo como 450px. --> 
+    <!-- autoplay: Faz com que o vídeo inicie automaticamente ao carregar a página. -->
+    <!-- loop: Faz o vídeo reiniciar automaticamente ao chegar ao final. -->
+    <!-- muted: Define o vídeo como mudo (sem áudio) por padrão. -->
+    <!-- poster="/images/image-jpeg-2.jpg": Especifica uma imagem que será exibida enquanto o vídeo não é carregado. -->
+    <video 
+        controls 
+        width="800px" 
+        height="450px" 
+        autoplay 
+        loop 
+        muted 
+        poster="/images/image-jpeg-2.jpg"   
+        preload="auto"
+    >
+
+        <!-- Adiciona uma fonte de vídeo no formato MP4, que é amplamente suportado. -->
+        <source 
+            src="/videos/video.mp4" 
+            type="video/mp4"
+        />
+
+        <!-- Adiciona uma fonte alternativa no formato WebM, garantindo maior compatibilidade entre navegadores. -->    
+        <source 
+            src="/videos/video.webm" 
+            type="video/webm"
+        />
+        
+        <!-- srclang="en": Define o idioma do arquivo de legendas como inglês. -->
+        <!-- kind="subtitles": Especifica que a trilha é do tipo "subtitles" (legendas). -->
+        <!-- label="Inglês": Fornece um rótulo para identificação do idioma das legendas (exibido nos controles do player). --> 
+        <!-- src="/videos/Cars 2 (2011).vtt": Caminho para o arquivo de legendas no formato WebVTT. -->
+        <track 
+            srclang="en" 
+            kind="subtitles" 
+            label="Inglês" 
+            src="/videos/Cars 2 (2011).vtt" 
+            
+        />
+        
+        <track 
+            srclang="es"
+            kind="subtitles" 
+            label="Espanhol"
+            src="/videos/Cars 2 (2011).vtt" 
+        />
+    </video>
+
 </body>
 </html>

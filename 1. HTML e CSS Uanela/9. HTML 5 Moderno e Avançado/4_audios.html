@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audios em HTML</title>
+</head>
+<body>
+
+    <!-- autoplay: Faz com que o audio inicie automaticamente ao carregar a página. -->
+    <!-- loop: Faz o audio reiniciar automaticamente ao chegar ao final. -->
+    <!-- muted: Define o audio como mudo (sem áudio) por padrão. -->
+    <!-- preload="auto": Indica ao navegador que deve carregar o áudio automaticamente ao carregar a página. -->
+    <!-- preload="metadata": Indica ao navegador para carregar apenas os metadados do áudio (duração, tamanho, etc.). -->
+    <!-- preload="none": Indica ao navegador que não deve carregar o áudio até que o usuário interaja (não funciona se `autoplay` for usado). 
+             Obs.: Apenas um dos valores `preload` será considerado; ajustar conforme o objetivo. -->
+    <!-- Adiciona controles padrão (play, pause, volume, etc.) para o áudio. -->
+    
+    <audio 
+        controls 
+        preload="auto" 
+    >
+    
+    <!-- Fonte de áudio no formato WAV (geralmente com qualidade alta, mas maior tamanho de arquivo). -->
+    <source 
+        src="/audios/piano.wav" 
+        type="audio/x-wav" 
+        
+    />
+    
+    <!-- Fonte de áudio no formato MP3 (mais comum e amplamente suportado). -->
+    <source 
+        src="/audios/piano.mp3" 
+        type="audio/mpeg" 
+        
+    />
+    
+    <!-- Fonte de áudio no formato OGG (formato aberto e com boa qualidade). -->
+    <source 
+        src="/audios/piano.ogg" 
+        type="audio/ogg" 
+        
+    />
+
+</audio>
+
+</body>
+</html>

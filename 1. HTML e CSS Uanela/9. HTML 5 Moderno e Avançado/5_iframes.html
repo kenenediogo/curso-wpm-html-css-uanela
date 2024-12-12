@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <iframe 
+        src="https://uanelacomo.com" 
+        width="360px" 
+        height="700" 
+        frameborder="0" scrolling="no">
+    </iframe>
+
+    <!--
+    Este iframe embute um vídeo do YouTube em uma página web. 
+    Configurações explicadas:
+    1. `width` e `height`: Determinam as dimensões do iframe (560x315px), usando a proporção 16:9 para vídeos.
+    2. `src`: URL do vídeo no YouTube. A estrutura `/embed/` é usada para incorporar o vídeo.
+    3. `title`: Texto descritivo para melhorar a acessibilidade, especialmente para leitores de tela.
+    4. `frameborder`: Define se haverá borda ao redor do iframe. O valor `0` remove a borda (opção depreciada).
+    5. `scrolling`: Especifica o comportamento da barra de rolagem. `no` desativa, mas geralmente não é necessário para vídeos do YouTube.
+    6. `allow`: Define permissões para o conteúdo:
+    - `accelerometer`: Uso de acelerômetro (não relevante para vídeos do YouTube).
+    - `autoplay`: Permite que o vídeo comece automaticamente.
+    - `clipboard-write`: Permite copiar dados para o clipboard.
+    - `encrypted-media`: Suporte para conteúdo protegido por DRM.
+    - `gyroscope`: Acesso ao giroscópio do dispositivo.
+    - `picture-in-picture`: Suporte ao modo "Picture-in-Picture".
+    - `web-share`: Permite compartilhar via API de compartilhamento.
+    7. `referrerpolicy`: Especifica como informações do site de origem são enviadas ao carregar o conteúdo. 
+    - `strict-origin-when-cross-origin` restringe o envio do referenciador ao domínio de origem.
+    8. `allowfullscreen`: Habilita o botão de tela cheia para o vídeo.
+    -->
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/3YMDgM1dLmY" 
+        title="[Power BI] Como Construir um PAINEL DE FILTROS Retrátil e Botão Limpar Filtros" 
+        frameborder="0" 
+        scrolling="no"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+</body>
+</html>
