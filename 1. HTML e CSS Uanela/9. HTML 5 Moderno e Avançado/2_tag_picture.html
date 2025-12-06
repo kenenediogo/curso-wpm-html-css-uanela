@@ -7,26 +7,28 @@
 </head>
 <body>
     <picture>
-        !-- A tag <picture> é usada para renderizar imagens específicas dependendo de critérios como largura da tela. -->
+        <!-- !-- A tag <picture> é usada para renderizar imagens específicas dependendo de critérios como largura da tela. -->
 
-            <!-- Código comentado -->
-            <!-- 
+            <!-- Código comentado
             <source srcset="/images/image-png.png"> 
                 Define uma imagem alternativa no formato PNG sem restrições de mídia.
             <source srcset="/images/image-jpeg.jpg" />
                 Define outra imagem alternativa no formato JPEG.
             <img src="/images/image-jpeg-2.jpg" alt="" width="600px"> 
-                Define uma imagem padrão com largura de 600px se nenhuma das alternativas for usada.
-            -->
+                Define uma imagem padrão com largura de 600px se nenhuma das alternativas for usada.-->
     
-            <source media="(min-width: 500px)" srcset="images/image-png.png"> 
+            <!-- <source media="(min-width: 500px)" srcset="images/image-png.png">  -->
                 <!-- Define que se a largura da tela for de no mínimo 500px, a imagem "image-png.png" será usada. -->
-            <source media="(max-width: 500px)" srcset="images/image-jpeg-2.jpg"> 
+            <!-- <source media="(max-width: 500px)" srcset="images/image-jpeg-2.jpg">  -->
                 <!-- Define que se a largura da tela for de no máximo 500px, a imagem "image-jpeg-2.jpg" será usada. -->
-            <img src="" alt=""> 
+            <!-- <img src="" alt="">  -->
                 <!-- Tag <img> serve como fallback, exibida caso nenhuma das opções <source> seja aplicada. 
-                     Atributo `src` vazio pode ser atualizado para uma imagem padrão se necessário.
-                     Atributo `alt` oferece texto alternativo para acessibilidade e SEO. -->
+                    Atributo `src` vazio pode ser atualizado para uma imagem padrão se necessário.
+                    Atributo `alt` oferece texto alternativo para acessibilidade e SEO. -->
+
+        <source media="(min-width: 500px)" srcset="images/image-png.png" type="">
+        <source media="(max-width: 500px)" srcset="images/image-jpeg-2.jpg" type="">
+        <img src="images/image-jpeg-2.jpg" alt="Descrição da Imagem">
     </picture>
 </body>
 </html>
