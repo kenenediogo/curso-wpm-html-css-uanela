@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Direcionados</title>
+
+    <style>
+
+        /* Selectores de Filho Directo */
+        div > p {
+            color: red;
+        }
+
+        /* Selectores adjacentes, irmão directo */
+        /* div + p { */
+        div + .paragraph{
+            color: blue;
+        }
+
+        /* Selector de Precedência ~ */
+        span ~ p {
+            background-color: yellow;
+        }
+
+        /* Selector de Atributo */
+        input[type] {
+            background-color: red;
+        }
+
+        a[target] {
+            background-color: yellow;
+        }
+
+        /* Selector de Atributo com Valores Específicos */
+        a[target = "_parent"] {
+            background-color: red;
+        }
+
+        input[type="text"] {
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Primeiro Parágrafo</p>
+        <span><p>Parágrafo dentro do Span</p></span> <!-- Precedência -->
+        <p>Lorem, ipsum.</p>
+    </div>
+
+    <p class="paragraph">Segundo Parágrafo</p>
+
+    <span>
+        <div></div>
+        <p class="paragraph">Terceiro Paragrafo</p>
+    </span>
+
+    <p>Teste</p>
+
+    <a href="https://uanelacomo.com" target="_blank">uanelacomo.com</a>
+    <a href="https://google.com" target="text">google.com</a>
+
+    <form>
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Nome">
+    </form>
+</body>
+</html>

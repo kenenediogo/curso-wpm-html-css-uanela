@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Peudo Selectores Usados Para Textos</title>
+
+        <style>
+            /* :: first-line: Selecciona a primeira linha */
+            p::first-line {
+                color: red;
+            }
+
+            /* ::first-letter */
+            p::first-letter {
+                color: blue;
+                font-size: 1.5rem;
+            }
+
+            /* ::selection - Muda a forma quando um texto está seleccionado */
+            p::selection {
+                background-color: yellow;
+                color: red;
+            }
+
+            /* ::placeholder - altera a cor do placeholder de um input */
+            input::placeholder {
+                color: grey;
+                opacity: 0.3;
+            }
+
+            li:first-child {
+                color: blue;
+            }
+
+            /* ::marker - altera os marcadores de uma lista */
+            li::marker {
+                content: "🤑";
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam error dolorem similique maxime neque dolores? Neque atque laudantium unde facere accusamus repudiandae obcaecati, sint fuga quos consectetur ab tenetur facilis!
+        </p>
+
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+        </ul>
+
+        <input type="text" placeholder="Nome">
+
+    </body>
+</html>

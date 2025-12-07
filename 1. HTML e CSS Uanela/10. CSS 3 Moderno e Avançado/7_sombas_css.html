@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sombras em CSS</title>
+
+        <style>
+            .conteiner {
+                display: flex;
+            }
+
+            .box {
+                padding: 1rem;
+                margin: 1rem;
+                background-color: #003dc1;
+                color: #fff;
+            }
+
+            /* box-shadow | Sombra de Caixas */
+            /* 1. box-shadow: [1. horizontal], [2. vertical], [3. cor] */
+            /* 2. box-shadow: [1. horizontal], [2. vertical], [3. desfoque], [4. cor] */
+            /* 3. box-shadow: [1. horizontal], [2. vertical], [3. desfoque], [4. espalhamento], [5. cor] */
+            .box {
+                box-shadow: 10px 10px #000;
+                box-shadow: 10px 10px 5px #000;
+                box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.5);
+                
+                /* Valores negativos a sombra vai para cima */
+                box-shadow: -10px -10px 5px -2px rgba(0, 0, 0, 0.5);
+                
+                /* Sombra Interna */
+                box-shadow: inset 10px -10px 50px 0px rgba(255, 0, 0, 0.7);
+                
+                /* Sombra Múltiplas */
+                box-shadow: -10px -10px 5px 5px rgba(255, 0, 0, 0.7),
+                10px 20px 20px 5px rgba(157, 255, 0, 0.7);
+            }
+
+            /* text-shadow | Sombra para texto */
+            p[id] {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 3rem;
+            }
+
+            p#a {
+                text-shadow: 0.2rem 0.2rem blueviolet;
+            }
+
+            p#b {
+                text-shadow: 0.2rem 0.2rem 0.2rem rgba(49, 226, 43, 0.438);
+            }
+            </style>
+    </head>
+    <body>
+        <p id="a">Bem vindo ao curso</p>
+        <p id="b">Bem vindo ao curso</p>
+        <p id="c">Bem vindo ao curso</p>
+        <p id="d">Bem vindo ao curso</p>
+        <div class="conteiner">
+            <div class="box">
+                <h1>Título</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, dolor? Iure, maxime? Autem, sint asperiores?</p>
+            </div>
+            
+            <div class="box">
+                <h1>Título</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, dolor? Iure, maxime? Autem, sint asperiores?</p>
+            </div>
+            
+            <div class="box">
+                <h1>Título</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, dolor? Iure, maxime? Autem, sint asperiores?</p>
+            </div>
+        </div>
+    </body>
+</html>
