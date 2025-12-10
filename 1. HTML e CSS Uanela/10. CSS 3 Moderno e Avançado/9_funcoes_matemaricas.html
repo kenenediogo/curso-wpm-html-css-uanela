@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Matemáticas</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        /* Função Calc: Para operações matemáticas */
+        header {
+            background-color: green;
+            color: #fff;
+            /* font-size: 2rem; */
+
+            /* Operações Usadas no Calc ( + - * / ) */
+
+            /* height: calc(100vh - 300px); */
+            /* height: calc(100vh + 300px);
+            width: calc(100vw - 300px); */
+            height: 100vh;
+        }
+
+        .box {
+            /* min() e max() */
+
+            border: 10px solid red;
+            background-color: blue;
+            /* width: min(300px, 100%); Qdo for menor que 300 px, faz o 100% do View Port */
+            width: max(300px, 100%); /* Qdo for maior que 300 px, faz o 100% do View Port */
+            height: max(400px, 90vw);
+            margin: 5px;
+            }
+
+        /* clamp(x (minimo), y (predefinido), z (máximo)) */
+        p {
+            line-height: clamp(16px, 4vw, 48px);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Olá Web Dev Pro Max</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores cumque provident porro. Exercitationem aliquid repudiandae sapiente quaerat facilis ullam temporibus minima, eos ab dolorem velit nam explicabo laboriosam magni magnam beatae accusamus non. Saepe tenetur atque eaque, exercitationem fuga ab nisi! Repudiandae eligendi incidunt dolor! Laboriosam, neque tempore. Ipsa, laboriosam!</p>
+    </header>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quaerat similique quibusdam cumque vitae voluptatum est magni provident suscipit nam.</p>
+    </div>
+</body>
+</html>
