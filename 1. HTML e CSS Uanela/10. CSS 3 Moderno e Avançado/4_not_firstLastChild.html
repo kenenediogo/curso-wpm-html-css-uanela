@@ -9,7 +9,7 @@
             /* Selector: not - não coloca a estilização na classe selecionada como seletor */
             a:not(.btn) {
                 text-decoration: none;
-                color: red;
+                color: blue;
                 display: flex;
             }
 
@@ -23,17 +23,17 @@
             } */
 
             /* first-child: seleciona o primeiro elemento filho dentro de um elemento pai */
-            /* li:first-child {
+            li:first-child {
                 background-color: red;
-            } */
+            }
 
             /* last-child: seleciona o ultimo elemento filho dentro de um elemento pai */
-            /* li:last-child {
+            li:last-child {
                 background-color: red;
-            } */
+            }
 
             /* uso do not com o first ou last-child */
-            li:not(li:last-child) {
+            li:not(li:first-child) {
                 background-color: green;
             }
         </style>

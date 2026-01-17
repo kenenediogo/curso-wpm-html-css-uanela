@@ -19,8 +19,13 @@
 
             /* ::selection - Muda a forma quando um texto está seleccionado */
             p::selection {
-                background-color: yellow;
+                background-color: grey;
                 color: red;
+            }
+
+            li::selection {
+                background-color: black;
+                color: white;
             }
 
             /* ::placeholder - altera a cor do placeholder de um input */
@@ -31,6 +36,14 @@
 
             li:first-child {
                 color: blue;
+            }
+
+            li:last-child {
+                color: red;
+            }
+
+            li:nth-child(2n) {
+                background-color: green;
             }
 
             /* ::marker - altera os marcadores de uma lista */
