@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes 1 | Animações Em CSS</title>
+    <style>
+        div {
+            background-color: coral;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            animation-name: kd;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;/* temporização da animação: linear, ease, esase-in, ease-out, ease-in-ou*/
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal; /* "normal", "reverse", "alternate", ou "alternate-reverse". */
+            animation-fill-mode: both; /* "none", "forwards", "backwards" ou "both" */
+            animation-play-state: running; /* "running" ou "paused"*/
+        }
+
+        @keyframes kd {
+            from {
+                top: 0;
+            }
+            
+            to {
+                background-color: black;
+                top: 400px;
+                width: 100px;
+                color: #fff;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>web</div>
+
+    <script>
+        const div = document.getElementsByTagName("div")[0];
+        setTimeout(() => {
+            div.style.animationPlayState = "paused";
+        }, 500);
+    </script>
+</body>
+</html>
