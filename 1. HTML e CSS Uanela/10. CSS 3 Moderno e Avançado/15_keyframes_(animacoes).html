@@ -10,18 +10,19 @@
             width: 200px;
             height: 200px;
             position: absolute;
-            animation-name: kd;
-            animation-duration: 2s;
-            animation-timing-function: ease-in-out;/* temporização da animação: linear, ease, esase-in, ease-out, ease-in-ou*/
-            animation-delay: 0s;
-            animation-iteration-count: 1;
-            animation-direction: normal; /* "normal", "reverse", "alternate", ou "alternate-reverse". */
-            animation-fill-mode: both; /* "none", "forwards", "backwards" ou "both" */
-            animation-play-state: running; /* "running" ou "paused"*/
+            /* animation-name: kd; */
+            /* animation-duration: 2s; */
+            /* animation-timing-function: ease-in-out;temporização da animação: linear, ease, esase-in, ease-out, ease-in-ou */
+            /* animation-delay: 0s; */
+            /* animation-iteration-count: 1; */
+            /* animation-direction: normal; "normal", "reverse", "alternate", ou "alternate-reverse". */
+            /* animation-fill-mode: both; "none", "forwards", "backwards" ou "both" */
+            /* animation-play-state: running; "running" ou "paused" */
+            animation: kd 2s ease-in-out 0s infinite normal both running;
         }
 
         @keyframes kd {
-            from {
+            /* from {
                 top: 0;
             }
             
@@ -31,18 +32,70 @@
                 width: 100px;
                 color: #fff;
                 font-size: 1rem;
+            } */
+
+            0% {
+                top: 0;
+                left: 0;
+                background-color: blue;
+                border-radius: 0 50% 50% 0;
+
+            }
+
+            10% {
+                top: 0;
+                left: 150;
+                background-color: black;
+                border-radius: 50%;
+            }
+
+            25% {
+                top: 0;
+                left: 300px;
+                background-color: yellow;
+                border-radius: 0 50% 50% 0;
+            }
+
+            40%{
+                top: 150px;
+                left: 300px;
+                background-color: black;
+                border-radius: 50%;
+            }
+
+            50% {
+                top: 300px;
+                left: 300px;
+                background-color: red;
+                border-radius: 0 0 50% 50%;
+            }
+
+            75% {
+                top: 300px;
+                left: 0;
+                border-radius: 50% 0 0 50%;
+            }
+
+            100% {
+                background-color: green;
+                top: 0;
+                left: 0;
+
+                color: #fff;
+                font-size: 2rem;
+                border-radius: 50% 50% 0 0;
             }
         }
     </style>
 </head>
 <body>
-    <div>web</div>
+    <div></div>
 
-    <script>
+    <!-- <script>
         const div = document.getElementsByTagName("div")[0];
         setTimeout(() => {
             div.style.animationPlayState = "paused";
         }, 500);
-    </script>
+    </script> -->
 </body>
 </html>
