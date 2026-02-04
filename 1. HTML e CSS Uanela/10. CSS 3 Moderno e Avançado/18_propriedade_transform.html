@@ -6,11 +6,42 @@
     <title>Propriedade Transform CSS</title>
 
     <style>
+        div {
+            background-color: blue;
+            margin: 200px;
+            width: 200px;
+            height: 200px;
 
+            /* Rotação */
+            transform: rotate(25deg);
+
+            /* Escala: Aumentar o objecto */
+            transform: scale(4, 2); /* Eixo X e o Eixo Y */
+            /* transform: scaleX(4); ----> Eixo X
+               transform: scaleY(3); ----> Eixo Y */
+
+            /* Translação (Deslocação) */
+            transform: translate(20px, 40px); /* Vai deslocar 20 pixels para a direita e 40 pixels para baixo*/
+            /* transform: translatex(20px); ----> Eixo X*/
+            /* transform: translatey(40px); ----> Eixo Y*/
+
+            /* Inclinação (skew) */
+            transform: skew(45deg, 10deg); /* Vai inclinar 45 degraus no eixo X e 10 degraus no eixo Y*/
+            /* transform: skewx(45deg); ---> Eixo X
+               transform: skewY(25deg); ---> Eixo Y */
+            
+            transition: all 0.5s ease;
+        }
+
+        div:hover {
+            transform: scale(2);
+            border-radius: 50%;
+            background-color: black;
+        }
     </style>
-    
+
 </head>
 <body>
-    
+    <div></div>
 </body>
 </html>
