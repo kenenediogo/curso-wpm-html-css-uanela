@@ -41,10 +41,10 @@
     /* ---- NAVBAR ---- */
 
     /* Reorganiza os elementos do navbar para um layout em coluna */
-    #navbar {
-        flex-direction: column; /* Empilha os itens verticalmente */
-        align-items: center;    /* Centraliza os itens no eixo principal */
-    }
+    /* #navbar {
+        flex-direction: column; ---> Empilha os itens verticalmente
+        align-items: center;    ---> Centraliza os itens no eixo principal 
+    } */
 
     /* Centraliza o logotipo e adiciona margem inferior */
     #navbar .logo {
@@ -53,15 +53,20 @@
     }
 
     /* Adiciona padding ao contêiner de navegação */
-    #navbar ul {
-        padding: 0.5rem; /* Garante espaçamento adequado ao redor dos itens */
+    #navbar ul:not(.menu-wrap ul) {
+        /* padding: 0.5rem;  Garante espaçamento adequado ao redor dos itens */
+        display: none;
+    }
+
+    .menu-wrap {
+        display: unset;
     }
 
     /* ---- SHOWCASE ---- */
 
     /* Ajusta o conteúdo principal no showcase para compensar o layout responsivo */
     #showcase .showcase-content {
-        top: 110px; /* Move o conteúdo para baixo para evitar sobreposição */
+        top: 73px; /* Move o conteúdo para baixo para evitar sobreposição */
     }
 
     /* ---- ABOUT ---- */

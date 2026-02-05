@@ -48,10 +48,14 @@ body {
     margin-top: 2rem;
 }
 
+.assinatura-1 a {
+    color: #02005f;
+}
+
 a {
     text-decoration: none;
     color: #008cff;
-    font-size: small;
+    font-size: medium;
 }
 
 .section {

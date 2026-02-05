@@ -188,6 +188,11 @@ p {
     border-radius: 5px; /* Adiciona bordas arredondadas ao fundo do link */
 }
 
+/* Esconder o menu hambuerger na versão normal */
+.menu-wrap {
+    display: none;
+}
+
 /*---- SHOWCASE ----*/
 
 /* Configuração geral da seção de destaque */
