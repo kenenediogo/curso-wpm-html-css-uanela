@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queris e Grids</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>Título</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti maiores nam culpa modi unde laudantium expedita explicabo facilis distinctio doloribus iusto, ab magni eum nemo inventore! Blanditiis vel alias tempore, reprehenderit corrupti quos odit, adipisci culpa nobis, temporibus id inventore!</p>
+        </div>
+
+        <div>
+            <h3>Título</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti maiores nam culpa modi unde laudantium expedita explicabo facilis distinctio doloribus iusto, ab magni eum nemo inventore! Blanditiis vel alias tempore, reprehenderit corrupti quos odit, adipisci culpa nobis, temporibus id inventore!</p>
+        </div>
+
+        <div>
+            <h3>Título</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti maiores nam culpa modi unde laudantium expedita explicabo facilis distinctio doloribus iusto, ab magni eum nemo inventore! Blanditiis vel alias tempore, reprehenderit corrupti quos odit, adipisci culpa nobis, temporibus id inventore!</p>
+        </div>
+
+        <div>
+            <h3>Título</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti maiores nam culpa modi unde laudantium expedita explicabo facilis distinctio doloribus iusto, ab magni eum nemo inventore! Blanditiis vel alias tempore, reprehenderit corrupti quos odit, adipisci culpa nobis, temporibus id inventore!</p>
+        </div>
+    </div>
+</body>
+</html>

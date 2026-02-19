@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-auto-rows: 100px;
+            gap: 1rem;
+            height: 100vh;
+
+            /* justify-items: start, end, center, stretch (default)
+            align-items: start, end, center, stretch (default) */
+            justify-items: stretch; /* Alinhamento das caixas (blocos) dentro do grid no eixo X */
+            align-items: stretch; /* Alinhamento das caixas (blocos) dentro do grid no eixo Y */
+
+            /* justify-content: start, end, center, space-between, space-around, space-evenly (uniformemente);
+            align-content: start, end, center, space-between, space-around, space-envenly; */
+            justify-content: space-evenly; /* Alinha todos os blocos de uma vez dentro do eixo X*/
+            align-content: space-evenly; /* Alinha todos os blocos de uma vez dentro do eixo Y*/
+
+            /* place-time: <align-items> <justify-items>;
+            place-content: <align content> <justify-content>; */
+            place-items: stretch end; /* Shorhand: <align-items> <justify-items> */
+            place-content: space-evenly space-between; /* Shorhand: <align content> <justify-content> */
+        }
+
+        .item {
+            background-color: #06f;
+            border: 1px solid red;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Alinhamento de um único elemento:
+        justify-self: start, end, center, stretch (default);
+        align-self: start, end, center, stretch (default); */
+        .item:first-child {
+            justify-self: stretch;
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div>
+        <div class="item">Item 13</div>
+        <div class="item">Item 14</div>
+        <div class="item">Item 15</div>
+    </div>
+</body>
+</html>

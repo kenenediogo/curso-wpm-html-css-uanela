@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Fit, Auto Fill e Minmax</title>
+    <style>
+        .container {
+            display: grid;
+            gap: 1rem;
+            /* grid-template-columns: 1fr 1fr; */
+            grid-template-columns: repeat(5, 200px);
+
+            /* Criar espaçamento entre colunas dinâmicas */
+            grid-template-columns: repeat(auto-fill, 200px);
+
+            /* propriedade auto-fill, minmx (recebe 2 valores) - Quando todos elementos estão posicionados ele continua adicionar espaços em branco e deixa espeços vazios */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+            /* propriedade auto-fit, minmx (recebe 2 valores) - Quando todos elementos estão posicionados ele não continua adicionar espaços em branco, preenche todo espaço com os itens, não deixando espaço vazio */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        .item {
+            background-color: #06f;
+            padding: 3rem;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+</body>
+</html>

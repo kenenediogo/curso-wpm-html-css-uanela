@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colunas Grid</title>
+    <style>
+        .container {
+            display: grid;
+            /* Valores do Grid: px, %, auto, fr */
+            grid-template-columns: 300px 300px 300px 300px;
+            grid-template-columns: 20% 20% 20% auto auto;
+            grid-template-columns: 1fr 2fr 3fr 4fr;
+            grid-template-columns: repeat(5, 2fr); /* define quantas colunas desejas e repartido pelo tamanho das mesmas por igual */
+            gap: 0.3rem; /* criar espaçamentos entre os elementos */
+            column-gap: 2rem; /* define apenas o espaçamento entre as colunas */
+            row-gap: 2rem; /* define apenas o espaçamento entre as linhas */
+        }
+
+        
+        .item {
+            padding: 3rem;
+            background-color: #06f;
+            border: 2px solid red;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: #fff;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 1rem;
+            margin-top: 2rem;
+
+        }
+
+        section, aside {
+            background-color: #181818;
+            color: #fff;
+            padding: 2rem;
+        }
+
+        hr {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <hr>
+
+    <main>
+        
+        <section>
+            <h1>Olá Web Pro Max</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, sit laudantium deserunt enim, accusamus cumque nesciunt saepe quia culpa fugit velit voluptate consequuntur delectus, doloribus facilis minus eum itaque adipisci doloremque odio officia necessitatibus repellendus. Voluptatem non inventore laboriosam voluptate?</p>
+        </section>
+
+        <aside>
+            <h2>Contacte-me</h2>
+            <ul>
+                <li>Kenene Diogo</li>
+                <li>Rua de Moçambique</li>
+                <li>contac@kdteconologias.com</li>
+                <li>930778000</li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>

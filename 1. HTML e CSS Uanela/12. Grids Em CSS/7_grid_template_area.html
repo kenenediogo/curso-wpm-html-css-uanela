@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Areas</title>
+    <style>
+        .container {
+            display: grid;
+            gap: 1rem;
+            grid-template-areas: 
+                "header header header header"
+                "section section section sidebar"
+                "box-1 box-2 box-3 box-4"
+                "footer footer footer box-4"
+                ;
+        }
+
+        /* Vai pegar e estilizar todos os filhos diretos do container */
+        .container > * {
+            border: 1px solid #333;
+            padding: 0.5rem;
+            color: #fff;
+            background-color: #06f;
+        }
+
+        header {
+            grid-area: header;
+            text-align: center;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: sidebar;
+        }
+
+        .box-1 {
+            grid-area: box-1;
+        }
+
+        .box-2 {
+            grid-area: box-2;
+        }
+
+        .box-3 {
+            grid-area: box-3;
+        }
+
+        .box-4 {
+            grid-area: box-4;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        @media (max-width: 768px){
+            .container {
+                grid-template-areas: 
+                "header header header header"
+                "section section section sidebar"
+                "box-1 box-1 box-1 box-4"
+                "box-2 box-2 box-2 box-4"
+                "box-3 box-3 box-3 box-4"
+                "footer footer footer footer"
+                ;
+            }
+        }
+
+        @media (max-width: 500px){
+            .container {
+                grid-template-areas: 
+                "header"
+                "section"
+                "sidebar"
+                "box-1"
+                "box-2"
+                "box-3"
+                "box-4"
+                "footer"
+                ;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blogspot</h1>
+        </header>
+
+        <section>
+            <h3>Bem Vindo ao Meu Blog</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quae reiciendis eius eaque soluta itaque dolores error pariatur repellendus exercitationem provident iste vero accusamus nesciunt, voluptate ducimus repudiandae esse, quam temporibus facere, consequatur cumque atque perspiciatis cupiditate! Libero aperiam itaque ipsam.</p>
+
+        </section>
+
+        <aside>
+            <h3>Contacte-nos</h3>
+            <ul>
+                <li>Kenene Diogo</li>
+                <li>Rua de Moçambique, Zona 1</li>
+                <li>contact@kdtecnologias.com</li>
+                <li>123456789</li>
+            </ul>
+        </aside>
+
+        <div class="box-1">
+            <h3>Destaque 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam dignissimos labore iusto? Saepe aperiam odit rem, accusamus adipisci culpa deleniti illum consequatur sunt enim fugit provident fuga eveniet hic ipsam amet aut a? Reprehenderit deserunt id corporis reiciendis culpa.</p>
+        </div>
+        <div class="box-2">
+            <h3>Destaque 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam dignissimos labore iusto? Saepe aperiam odit rem, accusamus adipisci culpa deleniti illum consequatur sunt enim fugit provident fuga eveniet hic ipsam amet aut a? Reprehenderit deserunt id corporis reiciendis culpa.</p>
+        </div>
+        <div class="box-3">
+            <h3>Destaque 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam dignissimos labore iusto? Saepe aperiam odit rem, accusamus adipisci culpa deleniti illum consequatur sunt enim fugit provident fuga eveniet hic ipsam amet aut a? Reprehenderit deserunt id corporis reiciendis culpa.</p>
+        </div>
+        <div class="box-4">
+            <h3>Destaque 4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam dignissimos labore iusto? Saepe aperiam odit rem, accusamus adipisci culpa deleniti illum consequatur sunt enim fugit provident fuga eveniet hic ipsam amet aut a? Reprehenderit deserunt id corporis reiciendis culpa.</p>
+        </div>
+
+        <footer>
+            <p>Copyright &copy; 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
