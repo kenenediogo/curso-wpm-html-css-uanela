@@ -15,6 +15,10 @@ body {
     color: #707070;
 }
 
+main {
+    background-color: #eee;
+}
+
 /* Classes utilitárias */
 .container {
     margin-inline: auto;
@@ -30,6 +34,7 @@ a {
     padding: 0.2rem 0.5rem;
     font-size: 0.8rem;
     font-weight: 600;
+    color: #fff;
 }
 
 .blog-category.blue {
@@ -210,3 +215,67 @@ header .showcase-blogs article h3 {
 header .showcase-blogs article:first-child h3 {
     font-size: 2.5rem;
 }
+
+/* Main | Blog Container */
+main .blogs-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+main .blogs-container article {
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 1fr 0.7fr;
+    transition: 0.2s all ease;
+}
+
+main .blogs-container article:hover {
+    transform: translateY(-1rem);
+}
+
+main .blogs-container article h3 {
+    color: #000;
+}
+
+main .blogs-container article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .blogs-container article .blog-info {
+    padding: 1.5rem;
+}
+
+main .blogs-container article .blog-info a {
+    color: unset;
+}
+
+/* Seleciona todos os elementos filhos DIRETOS do <a>, dentro da estrutura: main > .blogs-container > article > .blog-info > a, EXCETO o último filho.
+Ou seja: adiciona margem inferior em todos os elementos dentro do link, menos no último (para não criar espaço desnecessário no final). */
+
+main .blogs-container article .blog-info a > *:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+/* Main | Blogs Container */
+main .blogs-container article:nth-child(4) {
+    grid-column-end: span 2;
+    grid-template-rows: auto;
+}
+
+main .blogs-container article:nth-child(5) {
+    grid-column-end: span 3;
+    grid-template-rows: auto;
+}
+
+main .blogs-container article:nth-child(11) {
+    grid-column: 2 / span 2;
+    grid-template-rows: auto;
+}
+
+
+
+
+
