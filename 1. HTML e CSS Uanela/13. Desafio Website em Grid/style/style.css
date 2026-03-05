@@ -29,6 +29,11 @@ a {
     text-decoration: none;
 } 
 
+.section-title {
+    padding-block: 2rem;
+    color: #000;
+}
+
 .blog-category {
     background-color: var(--primary-color);
     padding: 0.2rem 0.5rem;
@@ -61,6 +66,7 @@ nav {
     color: #fff;
     position: fixed;
     backdrop-filter: blur(10px);
+    z-index: 2;
 }
 
 nav .nav-top {
@@ -275,7 +281,99 @@ main .blogs-container article:nth-child(11) {
     grid-template-rows: auto;
 }
 
+main .blogs-container .newsletter-container {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 2rem;
+}
 
+main .blogs-container .newsletter-container > div {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    color: #fff;
+}
 
+main .blogs-container .newsletter-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+}
 
+main .blogs-container .newsletter-container form > * {
+    margin-block: 0.3rem;
+    padding: 0.5rem;
+    border: none;
+}
 
+main .blogs-container .newsletter-container form button {
+    color: #fff;
+    background-color: var(--dark-grey);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+main .blogs-container .newsletter-container form button:hover {
+    background-color: #3f3f3f;
+}
+
+main .blogs-container .newsletter-container form img {
+    width: 100%;
+}
+
+/* Pagination */
+
+.pagination-section .container {
+    text-align: center;
+    padding-block: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-section .container ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-inline: 1rem; /* cria espços a esquerda e a direita */
+}
+
+.pagination-section .container ul li {
+    padding: 0.5rem;
+    width: 2rem;
+    font-weight: 700;
+}
+
+.pagination-section .container ul li.current {
+    background-color: var(--dark-grey);
+    border-radius: 8px;
+}
+
+.pagination-section .container ul li a {
+    color: var(--dark-grey);
+}
+
+.pagination-section .container ul li.current a {
+    color: #fff;
+}
+
+.pagination-section .pagination-btn {
+    background-color: #fff;
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-grey);
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
