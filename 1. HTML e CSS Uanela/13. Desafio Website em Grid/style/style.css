@@ -2,12 +2,17 @@
     --page-max-width: 1280px;
     --dark-grey: #1b1b1b;
     --primary-color: #09f;
+    --dark-primary-color: #0067ac;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -439,4 +444,68 @@ main .blogs-container .newsletter-container form img {
     text-align: center;
     padding: 0.5rem;
     font-size: 0.8rem;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 150px;
+    background-color: var(--dark-grey);
+    padding-block: 5rem;
+}
+
+footer h3 {
+    color: #fff;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #4b4b4b;
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+}
+footer .footer-content ul li {
+    list-style: none;
+    padding-block: 0.5rem;
+}
+
+footer .footer-content ul li a {
+    color: unset;
+}
+
+footer .copyright-text {
+    margin-top: 4rem;
+    grid-column: 1 / span 4;
+}
+
+footer .copyright-text span {
+    color: #fff;
+}
+
+footer .newsletter-container form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-top: 1rem;
+}
+
+footer .newsletter-container form > * {
+    margin-block: 0.3rem;
+    padding: 0.5rem;
+    border: none;
+}
+
+footer .newsletter-container form > button {
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+footer .newsletter-container form > button:hover {
+    background-color: var(--dark-primary-color);
+    border-radius: 50px;
 }
