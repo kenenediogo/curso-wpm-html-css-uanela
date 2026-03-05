@@ -20,6 +20,7 @@ main {
 }
 
 /* Classes utilitárias */
+/* ------------------------------------------------------ */
 .container {
     margin-inline: auto;
     width: var(--page-max-width);
@@ -27,11 +28,19 @@ main {
 
 a {
     text-decoration: none;
-} 
+}
 
 .section-title {
     padding-block: 2rem;
     color: #000;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-2 {
+    margin-top: 2rem;
 }
 
 .blog-category {
@@ -57,6 +66,7 @@ a {
 .blog-category.red {
     background-color: #f00;
 } /* Fim Classes utilitárias */
+/* ------------------------------------------------------ */
 
 /* Nav Bar | parte de cima */
 nav {
@@ -376,4 +386,57 @@ main .blogs-container .newsletter-container form img {
     color: var(--dark-grey);
     border-radius: 50%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Popular Blogs Section */
+
+.popular-blogs-section .container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.popular-blogs-section .popular-blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+}
+
+.popular-blogs-section .popular-blogs article a {
+    display: flex;
+    color: var(--dark-grey);
+}
+
+.popular-blogs-section .popular-blogs article h3 {
+    font-size: 1rem;
+}
+
+.popular-blogs-section .popular-blogs article p {
+    font-size: 0.8rem;
+}
+
+.popular-blogs-section .popular-blogs article img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+/* Tags-Section */
+.tags-section .tags {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin-inline: auto;
+}
+.tags-section .tags div {
+    color: #000;
+    font-weight: bold;
+    background-color: #cecece;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.8rem;
 }
