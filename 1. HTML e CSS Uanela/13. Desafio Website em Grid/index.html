@@ -11,6 +11,18 @@
     <link rel="shortcut icon" href="image/ICON DE SHORTCUT.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|staatliches">
     <link rel="stylesheet" href="style/style.css">
+    <!-- largescreem -->
+    <link 
+        rel="stylesheet" 
+        media="(min-width: 768px) and (max-width: 1280px)" 
+        href="style/mediumscreens.css"
+    >
+    <!-- mobile -->
+    <link 
+        rel="stylesheet" 
+        media="(max-width: 767px)"
+        href="style/mobile.css"
+    >
 </head>
 <body>
     <nav>
@@ -31,6 +43,12 @@
                 <div class="search-input-container">
                     <input type="search" placeholder="pesquisar">
                     <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <!-- menu hamburger -->
+                    <button class="menu-trigger">
+                        <i class="fas fa-bars"></i> <!-- menu hamburger -->
+                        <i class="fas fa-xmark"></i> <!-- botão X -->
+                    </button>
                 </div>
             </div>
             
@@ -108,14 +126,14 @@
                         <h3>NEWSLETTER</h3>
                         <p>Inscreva-se para receber um email quando novos blogs forem adicionados e ficar a par das nossas novidades.</p>
 
-                        <form>
-                            <input type="text" placeholder="Seu Nome">
-                            <input type="email" placeholder="Seu Email">
-                            <button>Enviar</button>
+                        <form name="contact" method="POST" data-netlify="true">
+                            <input type="text" placeholder="Seu Nome" name="name">
+                            <input type="email" placeholder="Seu Email" name="email">
+                            <button type="submit">Enviar</button>
                         </form>
                     </div>
 
-                    <img src="image/ads-img.jpg" alt="">
+                    <img src="image/ads-img.jpg">
                 </div>
 
                 <!-- Blog 1 -->
@@ -128,8 +146,8 @@
                             <h3>Qualificações Para o Mundial</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima reprehenderit animi vero esse aut. Autem rem ea ipsum aspernatur, dignissimos eaque esse corporis nobis non debitis neque eos aliquam vitae.</p>
 
-                            <div class="blog-categoreis">
-                                <span class="blog-category green">FUTEBOL</span>
+                            <div class="blog-categories">
+                                <span class="blog-category green">BLOG 1: N-CHILD (2)</span>
                                 <span class="blog-category red">DESPORTO</span>
                             </div>
                         </a>
@@ -146,8 +164,8 @@
                             <h3>Qualificações Para o Mundial</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima reprehenderit animi vero esse aut. Autem rem ea ipsum aspernatur, dignissimos eaque esse corporis nobis non debitis neque eos aliquam vitae.</p>
 
-                            <div class="blog-categoreis">
-                                <span class="blog-category green">FUTEBOL</span>
+                            <div class="blog-categories">
+                                <span class="blog-category green">BLOG 2: N-CHILD (3)</span>
                                 <span class="blog-category red">DESPORTO</span>
                             </div>
                         </a>
@@ -164,8 +182,8 @@
                             <h3>Qualificações Para o Mundial</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima reprehenderit animi vero esse aut. Autem rem ea ipsum aspernatur, dignissimos eaque esse corporis nobis non debitis neque eos aliquam vitae.</p>
 
-                            <div class="blog-categoreis">
-                                <span class="blog-category green">FUTEBOL</span>
+                            <div class="blog-categories">
+                                <span class="blog-category green">BLOG 3: N-CHILD (4)</span>
                                 <span class="blog-category red">DESPORTO</span>
                             </div>
                         </a>
@@ -182,8 +200,8 @@
                             <h3>Qualificações Para o Mundial</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima reprehenderit animi vero esse aut. Autem rem ea ipsum aspernatur, dignissimos eaque esse corporis nobis non debitis neque eos aliquam vitae.</p>
 
-                            <div class="blog-categoreis">
-                                <span class="blog-category green">FUTEBOL</span>
+                            <div class="blog-categories">
+                                <span class="blog-category green">BLOG 4: N-CHILD (5)</span>
                                 <span class="blog-category red">DESPORTO</span>
                             </div>
                         </a>
@@ -200,8 +218,8 @@
                             <h3>Qualificações Para o Mundial</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima reprehenderit animi vero esse aut. Autem rem ea ipsum aspernatur, dignissimos eaque esse corporis nobis non debitis neque eos aliquam vitae.</p>
 
-                            <div class="blog-categoreis">
-                                <span class="blog-category green">FUTEBOL</span>
+                            <div class="blog-categories">
+                                <span class="blog-category green">BLOG 5: N-CHILD (6)</span>
                                 <span class="blog-category red">DESPORTO</span>
                             </div>
                         </a>
@@ -218,8 +236,8 @@
                             <h3>Qualificações Para o Mundial</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima reprehenderit animi vero esse aut. Autem rem ea ipsum aspernatur, dignissimos eaque esse corporis nobis non debitis neque eos aliquam vitae.</p>
 
-                            <div class="blog-categoreis">
-                                <span class="blog-category green">FUTEBOL</span>
+                            <div class="blog-categories">
+                                <span class="blog-category green">BLOG 6: N-CHILD (7)</span>
                                 <span class="blog-category red">DESPORTO</span>
                             </div>
                         </a>
@@ -236,8 +254,8 @@
                             <h3>Qualificações Para o Mundial</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima reprehenderit animi vero esse aut. Autem rem ea ipsum aspernatur, dignissimos eaque esse corporis nobis non debitis neque eos aliquam vitae.</p>
 
-                            <div class="blog-categoreis">
-                                <span class="blog-category green">FUTEBOL</span>
+                            <div class="blog-categories">
+                                <span class="blog-category green">BLOG 7: N-CHILD (8)</span>
                                 <span class="blog-category red">DESPORTO</span>
                             </div>
                         </a>
@@ -254,8 +272,8 @@
                             <h3>Qualificações Para o Mundial</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima reprehenderit animi vero esse aut. Autem rem ea ipsum aspernatur, dignissimos eaque esse corporis nobis non debitis neque eos aliquam vitae.</p>
 
-                            <div class="blog-categoreis">
-                                <span class="blog-category green">FUTEBOL</span>
+                            <div class="blog-categories">
+                                <span class="blog-category green">BLOG 8: N-CHILD (9)</span>
                                 <span class="blog-category red">DESPORTO</span>
                             </div>
                         </a>
@@ -272,8 +290,8 @@
                             <h3>Qualificações Para o Mundial</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima reprehenderit animi vero esse aut. Autem rem ea ipsum aspernatur, dignissimos eaque esse corporis nobis non debitis neque eos aliquam vitae.</p>
 
-                            <div class="blog-categoreis">
-                                <span class="blog-category green">FUTEBOL</span>
+                            <div class="blog-categories">
+                                <span class="blog-category green">BLOG 9: N-CHILD (10)</span>
                                 <span class="blog-category red">DESPORTO</span>
                             </div>
                         </a>
@@ -290,8 +308,8 @@
                             <h3>Qualificações Para o Mundial</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima reprehenderit animi vero esse aut. Autem rem ea ipsum aspernatur, dignissimos eaque esse corporis nobis non debitis neque eos aliquam vitae.</p>
 
-                            <div class="blog-categoreis">
-                                <span class="blog-category green">FUTEBOL</span>
+                            <div class="blog-categories">
+                                <span class="blog-category green">BLOG 10: N-CHILD (11)</span>
                                 <span class="blog-category red">DESPORTO</span>
                             </div>
                         </a>
@@ -308,8 +326,8 @@
                             <h3>Qualificações Para o Mundial</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima reprehenderit animi vero esse aut. Autem rem ea ipsum aspernatur, dignissimos eaque esse corporis nobis non debitis neque eos aliquam vitae.</p>
 
-                            <div class="blog-categoreis">
-                                <span class="blog-category green">FUTEBOL</span>
+                            <div class="blog-categories">
+                                <span class="blog-category green">BLOG 11: N-CHILD (12)</span>
                                 <span class="blog-category red">DESPORTO</span>
                             </div>
                         </a>
@@ -515,6 +533,18 @@
             </div>
         </div>
     </footer>
+
+    <!-- função javascript para mostrar o menu hamburger -->
+    <script>
+        const menuTriggerBtn = document.querySelector(".menu-trigger");
+        const navBottom = document.querySelector(".nav-bottom");
+        const hamburgerIcon = document.querySelector(".fa-bars");
+
+        menuTriggerBtn.addEventListener("click", () => {
+            navBottom.classList.toggle("show");
+            hamburgerIcon.classList.toggle("show");
+        });
+    </script>
 
 
     <script src="https://kit.fontawesome.com/219142bc1f.js" crossorigin="anonymous"></script>

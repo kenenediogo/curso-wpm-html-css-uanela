@@ -11,6 +11,16 @@
     <link rel="shortcut icon" href="image/ICON DE SHORTCUT.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|staatliches">
     <link rel="stylesheet" href="style/style.css">
+    <link 
+        rel="stylesheet" 
+        media="(min-width: 768px) and (max-width: 1280px)" 
+        href="style/mediumscreens.css"
+    >
+    <link 
+        rel="stylesheet" 
+        media="(max-width: 767px)"
+        href="style/mobile.css"
+    >
 </head>
 <body>
     <nav>
@@ -31,6 +41,12 @@
                 <div class="search-input-container">
                     <input type="search" placeholder="pesquisar">
                     <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <!-- menu hamburger -->
+                    <button class="menu-trigger">
+                        <i class="fas fa-bars"></i> <!-- menu hamburger -->
+                        <i class="fas fa-xmark"></i> <!-- botão X -->
+                    </button>
                 </div>
             </div>
             
@@ -468,6 +484,18 @@
             </div>
         </div>
     </footer>
+
+    <!-- função javascript para mostrar o menu hamburger -->
+    <script>
+        const menuTriggerBtn = document.querySelector(".menu-trigger");
+        const navBottom = document.querySelector(".nav-bottom");
+        const hamburgerIcon = document.querySelector(".fa-bars");
+
+        menuTriggerBtn.addEventListener("click", () => {
+            navBottom.classList.toggle("show");
+            hamburgerIcon.classList.toggle("show");
+        });
+    </script>
 
 
     <script src="https://kit.fontawesome.com/219142bc1f.js" crossorigin="anonymous"></script>
